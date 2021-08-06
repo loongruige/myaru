@@ -5,7 +5,7 @@ token: process.env["nirlepcute"], //Discord Bot Token
 prefix: "m." //Discord Bot Prefix
 })
 bot.onMessage() //Allows to execute Commands
-bot.loadCommands('./commands')
+bot.loadCommands('./commadns')
 const vars = require('./variables/vars.js')
 
 bot.onBanAdd()
