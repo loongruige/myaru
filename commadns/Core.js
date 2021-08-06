@@ -1,4 +1,8 @@
 module.exports = [{
   name: "ping",
-  code: "how dare you ping my pong i will call the fucking police"
+  code: `$title[Pong!]
+  $description[\`\`\`yaml
+  Bot ping : $pingms
+  DB ping  : $dbpingms]
+  $footer[$getVar[botver]] $color[$getVar[color]]`
 }]

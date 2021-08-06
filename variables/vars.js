@@ -1,5 +1,6 @@
 const variables = {
-  variable: "value"
+  botver: "Myaru Alpha",
+  color: "03fc8c"
 }
 
 module.exports = variables ;
