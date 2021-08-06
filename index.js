@@ -24,7 +24,7 @@ bot.onRoleDelete()
 bot.onRoleUpdate()
 bot.onVoiceStateUpdate()
 
-//quick test 3
+//quick test 4
 
 bot.command({
   name: "help",
