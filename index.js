@@ -2,7 +2,7 @@ const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
 token: process.env["nirlepcute"], //Discord Bot Token
-prefix: "m/" //Discord Bot Prefix
+prefix: "m." //Discord Bot Prefix
 })
 bot.onMessage() //Allows to execute Commands
 bot.loadCommands('./commands')
