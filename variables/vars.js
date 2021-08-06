@@ -3,4 +3,4 @@ const variables = {
   color: "03fc8c"
 }
 
-module.exports = variables ;
+module.exports = variables;

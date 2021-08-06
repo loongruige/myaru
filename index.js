@@ -4,9 +4,10 @@ const bot = new aoijs.Bot({
 token: process.env["nirlepcute"], //Discord Bot Token
 prefix: "m." //Discord Bot Prefix
 })
+const variables = require('./variables/vars.js')
 bot.onMessage() //Allows to execute Commands
 bot.loadCommands('./commadns')
-const vars = require('./variables/vars.js')
+
 
 bot.onBanAdd()
 bot.onBanRemove()
@@ -38,4 +39,4 @@ bot.status({
   text: "Getting rewritten"
 })
 
-bot.variables(vars)
+bot.variables(variables)
