@@ -6,7 +6,7 @@ prefix: "m/" //Discord Bot Prefix
 })
 bot.onMessage() //Allows to execute Commands
 bot.loadCommands('./commands')
-const vars = require('./variables')
+const vars = require('./variables/vars.js')
 
 bot.onBanAdd()
 bot.onBanRemove()
@@ -23,9 +23,6 @@ bot.onRoleCreate()
 bot.onRoleDelete()
 bot.onRoleUpdate()
 bot.onVoiceStateUpdate()
-
-//quick test 4
-
 
 bot.variables(variables)
 
