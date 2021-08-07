@@ -36,7 +36,15 @@ All members : $allMembersCount]`
 })
 
 bot.status({
-  text: "Getting rewritten"
+  text: "Getting rererewritten",
+  time: 12
 })
-
+bot.status({
+  text: "Getting rewritten for the 3rd time",
+  time: 12
+})
+bot.status({
+  text: "use m.freenitro",
+  time: 12
+})
 bot.variables(variables)
