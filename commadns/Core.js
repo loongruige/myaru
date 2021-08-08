@@ -76,4 +76,51 @@ $description[Generating...]
 $footer[$getVar[botver]] $color[$getVar[color]]  
 $editin[3s;{title:Free nitro!}{description:Here's your code#COLON#\n[https://discord.gift/YTGKBR3Xf8P8nYZd](https://discord.gg/TPw3gcm9XU)}{footer:$getVar[botver]}{color:$getvar[color]}]
 `
+},
+{
+  name: "thank",
+  code: `
+$if[$checkContains[$getvar[owners];$authorID]==true]
+$title[Thanks!]
+$description[You have thanked Nirlep!
+You thanked him **$getGlobalUserVar[thankUser]** time(s)!
+He has been thanked **$getVar[thank]** time(s)!]
+$footer[$getvar[botver]]$color[$getvar[color]
+$setGlobalUserVar[thankUser;$sum[$getGlobalUserVar[thankUser];1]]
+$setVar[thank;$sum[$getVar[thank];1]]
+$else
+$title[Thanks!]
+$description[You have thanked Nirlep!
+You thanked him **$getGlobalUserVar[thankUser]** time(s)!
+He has been thanked **$getVar[thank]** time(s)!]
+$footer[$getvar[botver]]$color[$getvar[color]
+$setGlobalUserVar[thankUser;$sum[$getGlobalUserVar[thankUser];1]]
+$setVar[thank;$sum[$getVar[thank];1]]
+$endif
+$globalCooldown[6h;You have a 6-hour cooldown!]
+`
+},
+,
+{
+  name: "pet",
+  code: `
+$if[$checkContains[$getvar[owners];$authorID]==true]
+$title[Thanks!]
+$description[You have pet Windows!
+You pet him/her **$getGlobalUserVar[petUser]** time(s)!
+He/she has been pet **$getVar[pet]** time(s)!]
+$footer[$getvar[botver]]$color[$getvar[color]
+$setGlobalUserVar[petUser;$sum[$getGlobalUserVar[petUser];1]]
+$setVar[pet;$sum[$getVar[pet];1]]
+$else
+$title[pets!]
+$description[You have pet Windows!
+You pet him/her **$getGlobalUserVar[petUser]** time(s)!
+He/she has been pet **$getVar[pet]** time(s)!]
+$footer[$getvar[botver]]$color[$getvar[color]
+$setGlobalUserVar[petUser;$sum[$getGlobalUserVar[petUser];1]]
+$setVar[pet;$sum[$getVar[pet];1]]
+$endif
+$globalCooldown[6h;You have a 6-hour cooldown!]
+`
 }]
